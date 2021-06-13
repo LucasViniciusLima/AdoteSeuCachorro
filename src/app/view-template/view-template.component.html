@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/'"><img src="../../assets/icone.png" alt="icone-dogs" class="icon-home"></a>            
+        </li>
+        <li class="nav-item">            
+            <a class="nav-link active" aria-current="page" [routerLink]="'/'">Ver cachorrinhos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/myaccount'">Minha conta</a>
+        </li>
+    </ul>
+</nav>
+<div class="container py-3">
+    <ng-content></ng-content>
+</div>
+

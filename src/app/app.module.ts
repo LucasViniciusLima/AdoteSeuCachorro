@@ -8,6 +8,8 @@ import { CadastroInteressadoComponent } from './cadastro-interessado/cadastro-in
 import { CadastroCachorroComponent } from './cadastro-cachorro/cadastro-cachorro.component';
 import { MarcarVisitaComponent } from './marcar-visita/marcar-visita.component';
 import { RotasModule } from './rotas.routing';
+import { ViewTemplateComponent } from './view-template/view-template.component';
+import { MyAccountComponent } from './my-account/my-account.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { RotasModule } from './rotas.routing';
     CadastroCanilComponent,
     CadastroInteressadoComponent,
     CadastroCachorroComponent,
-    MarcarVisitaComponent
+    MarcarVisitaComponent,
+    ViewTemplateComponent,
+    MyAccountComponent
   ],
   imports: [
     BrowserModule,

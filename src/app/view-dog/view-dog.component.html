@@ -1,1 +1,23 @@
-<p>view-dog works!</p>
+<div>
+    <a *ngIf="isCanil()" class="float-end btn btn-primary" [routerLink]="'/cadastrocachorro'">+ Adicionar novo cachorro</a>
+</div>
+<div class="row">
+    <div class="card text-white bg-dark mb-3 px-0 mx-1" style="max-width: 18rem;">
+        <img style="width: 100%" src="https://exame.com/wp-content/uploads/2017/04/animal.png?w=640" class="card-img-top" alt="imagem-do-cachorro">
+        <div class="card-body text-center py-2">
+            <div class="card-title fw-bold my-0">{{ 'NOME DO CACHORRO' }}</div>            
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item text-white bg-transparent">{{ 'Raça: ' }}</li>
+            <li class="list-group-item text-white bg-transparent">{{ 'Idade: ' }}</li>
+            <li class="list-group-item text-white bg-transparent">{{ 'Peso: ' }}</li>
+            <li class="list-group-item text-white bg-transparent">{{ 'Pelugem: ' }}</li>
+            <li class="list-group-item text-white bg-transparent">{{ 'Tamanho: ' }}</li>
+        </ul>
+        <div class="card-body text-center">            
+            <a *ngIf="isAdotante()" class="btn btn-success">Marcar Visita</a>
+            <a *ngIf="isCanil()" class="btn btn-primary">Editar</a>
+        </div>
+    </div>    
+</div>
+

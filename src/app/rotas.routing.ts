@@ -4,6 +4,7 @@ import { CadastroCachorroComponent } from './cadastro-cachorro/cadastro-cachorro
 import { CadastroCanilComponent } from './cadastro-canil/cadastro-canil.component';
 import { CadastroInteressadoComponent } from './cadastro-interessado/cadastro-interessado.component';
 import { MarcarVisitaComponent } from './marcar-visita/marcar-visita.component';
+import { MyAccountComponent } from './my-account/my-account.component';
 
 import { ViewDogComponent } from './view-dog/view-dog.component';
 
@@ -12,7 +13,8 @@ const rotas: Routes = [
     {path: 'cadastrocanil', component: CadastroCanilComponent},
     {path: 'cadastrocachorro', component: CadastroCachorroComponent},
     {path: 'marcarvisita', component: MarcarVisitaComponent},
-    {path: 'cadastrointeressado', component: CadastroInteressadoComponent}
+    {path: 'cadastrointeressado', component: CadastroInteressadoComponent},
+    {path: 'myaccount', component: MyAccountComponent}
 ]
 
 @NgModule({
